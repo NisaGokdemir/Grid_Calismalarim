@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .header{
+            grid-column: 1 / span 3;
+            text-align: center;
+            background-color: red;
+        }
+        .content{
+            grid-column: 1 / span 2;
+        }
+        .footer{
+            grid-column: 1 / span 3;
+            background-color: red;
+        }
+        .box-1{
+            grid-column: 1 / span 3;
+        }
+        .box-3{
+            grid-column: 2 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Page Header</h2>
+        </header>
+        <section class="content">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nulla velit numquam ipsa ex commodi esse illo dicta natus voluptate.</p>
+        </section>
+        <aside class="aside">
+            <h2>Lorem, ipsum.</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+        </aside>
+        <div class="box-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat ducimus deleniti deserunt porro ullam enim possimus omnis corporis facere.
+        </div>
+        <div class="box-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat ducimus deleniti deserunt porro ullam enim possimus omnis corporis facere.
+        </div>
+        <div class="box-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat ducimus deleniti deserunt porro ullam enim possimus omnis corporis facere.
+        </div>
+        <footer class="footer">
+            Lorem ipsum dolor sit amet.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .container{
+            display: grid;
+            height: 800px; 
+
+            /* grid-template-columns: 150px 250px 400px 150px; sütunlarım genişliği  */
+            /* grid-template-columns: 150px auto 200px auto; */
+            /* grid-template-columns: auto auto 20%; */
+            /* grid-template-columns: repeat(3,auto); 3 sütuna auto uygular */
+            grid-template-columns: 2fr 1fr; /*fr bir alan oluşturmaktır oran için kullanabiliriz*/
+            grid-template-rows: 1fr 2fr;
+
+            grid-auto-rows: 3fr; /*üstte verdiğimiz row ayarı dışında kalan alanları 3fr şeklinde uygular*/
+
+
+
+
+
+            padding: 20px;
+            background-color: #034f84;
+        }
+        .item{
+            background-color: #f7786b;
+            padding: 20px;
+            margin: 20px;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+        <div class="item">item 9</div>
+        <div class="item">item 10</div>
+    </div>
+</body>
+</html>
